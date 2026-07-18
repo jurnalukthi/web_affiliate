@@ -1,8 +1,10 @@
 {
-  "hook_1": "Muka bertekstur dan bekas jerawat susah hilang?",
-  "hook_2": "Peeling serum seampuh ini cuma 39 ribu?",
-  "hook_3": "Serum eksfoliasi ungu lokal yang ramah kulit sensitif!",
-  "isi_suara": "Facetology Purple Ranger solusinya. Formula AHA BHA PHA plus Cica ampuh angkat sel kulit mati, halusin tekstur, dan cerahin muka tanpa bikin iritasi. Udah BPOM.",
-  "cta": "Buruan klik link di bio sekarang!",
-  "promo_tag": "DISKON 65% BPOM ORIGINAL"
+  "hook_1": "Muka gradakan dan banyak bekas jerawat?",
+  "hook_2": "Peeling serum viral cuma 39 ribu?",
+  "hook_3": "Peeling 60 detik langsung bikin halus!",
+  "isi_suara": "Cobain Facetology Purple Ranger. Kandungan AHA BHA PHA 13,5% ampuh angkat sel kulit mati. Plus Cica 5% biar kulit gak iritasi. Tekstur jadi halus, bekas jerawat pudar, dan makin cerah.",
+  "cta": "Klik link di bio buat borong!",
+  "promo_tag": "DISKON 65% CUMA 39 RIBU",
+  "caption_ig": "Kulit gradakan & kusam? Saatnya cobain Facetology Purple Ranger Peeling Serum! 💜\n\nDengan AHA BHA PHA 13.5% & Cica 5%, ampuh eksfoliasi tanpa bikin iritasi. Cukup 60 detik, kulit langsung halus dan cerah!\n\n👉 Klik link di bio untuk beli!\n\n#Facetology #PeelingSerum #EksfoliasiWajah #KulitGlowing #RacunShopee #SkincareLokal",
+  "caption_tiktok": "Peeling 60 detik bikin kulit langsung mulus? Cobain Facetology Purple Ranger! Diskon 65% cuma 39 ribu. Klik link di bio sekarang! 💜 #Facetology #PeelingSerum #Eksfoliasi #RacunSkincare #Fyp"
 }

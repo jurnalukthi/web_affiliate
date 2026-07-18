@@ -1,0 +1,10 @@
+{
+  "hook_1": "Kulit kusam dan belang gara-gara matahari?",
+  "hook_2": "Sunscreen SPF 50 cuma 50 ribuan?!",
+  "hook_3": "Sunscreen pertama dengan collagen water, gak bikin dempul!",
+  "isi_suara": "Kenalin Hanasui Collagen Water Sunscreen SPF 50 PA++++. Ringan banget, cepat meresap, nol persen alkohol, dan gak ada whitecast. Kandungan Mugwort plus Vitamin E-nya bikin kulit tenang dan lembap seharian. Udah BPOM.",
+  "cta": "Yuk, buruan check out! Klik link di bio sekarang!",
+  "promo_tag": "SPF 50 CUMA 50 RIBUAN",
+  "caption_ig": "Sunscreen lokal terbaik! ☀️ Hanasui Collagen Water Sunscreen SPF 50 PA++++ lindungi kulit dari UV dan polusi tanpa bikin kusam atau lengket. Formula ringan, no whitecast, plus kandungan collagen bikin kulit kenyal. ✨\n\n👉 Klik link di bio untuk beli!\n\n#HanasuiSunscreen #SunscreenViral #RacunBelanja #SunscreenMurah #SkincareLokal",
+  "caption_tiktok": "Sunscreen SPF 50 termantul gak bikin abu-abu! 😭 Klik link di bio sekarang sebelum kehabisan! #Hanasui #SunscreenViral #Fyp #RacunBelanja #SunscreenMurah"
+}

@@ -1,0 +1,10 @@
+{
+  "hook_1": "Wajah kusam dan belang bikin gak pede?",
+  "hook_2": "Day cream BPOM diskon 36%, cuma 50 ribuan!",
+  "hook_3": "Rahasia glowing seharian tanpa ribet pakai sunscreen lagi.",
+  "isi_suara": "Pakai They.We Day Cream. Kandungan Niacinamide dan Shea Butter ampuh cerahkan wajah. Ada UV filter buat lindungi kulit. Aman buat bumil, busui, dan semua jenis kulit. Sudah BPOM.",
+  "cta": "Yuk, check out produknya di link bio sekarang!",
+  "promo_tag": "DISKON 36% CUMA 57 RIBU",
+  "caption_ig": "Kulit cerah, lembab, dan terlindungi seharian dengan They.We Day Cream Perfect Glow! ✨ Kandungan Niacinamide & UV Filter siap jaga kulitmu. Aman untuk bumil & busui.\n\nKlik link di bio untuk beli! 🛍️\n\n#TheyWeDayCream #DayCreamGlow #KulitSehat #SkincareBPOM #RekomendasiSkincare",
+  "caption_tiktok": "Day cream 50 ribuan udah ada UV filter + aman buat bumil busui? 😍 Kulit auto glowing! Klik link di bio ya. #theywe #daycream #glowing #skincareviral #fyp"
+}

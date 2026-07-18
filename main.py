@@ -82,6 +82,10 @@ Struktur:
 - Solusi & Benefit (detik 4-20): Bahas keunggulan spesifik produk berdasarkan detail di atas (kandungan, manfaat, aman bumil/busui, BPOM, harga coret/diskon jika ada).
 - CTA (detik 21-25): Arahkan klik link di bio.
 
+Selain skrip, buat juga caption promosi media sosial:
+- caption_ig: Caption estetis/informatif dengan emoji, jelaskan keunggulan utama, ajakan klik link di bio, dan minimal 5 hashtag relevan.
+- caption_tiktok: Caption singkat, padat, memicu rasa penasaran, ajakan klik link di bio, dan minimal 5 hashtag viral/Fyp.
+
 Format Output:
 Berikan output dalam format JSON terstruktur persis seperti ini agar mudah diproses otomatis oleh program:
 {{
@@ -90,7 +94,9 @@ Berikan output dalam format JSON terstruktur persis seperti ini agar mudah dipro
   "hook_3": "Teks alternatif hook 3",
   "isi_suara": "Teks lengkap suara isi/benefit yang akan dibaca voiceover",
   "cta": "Teks lengkap suara CTA yang akan dibaca voiceover",
-  "promo_tag": "Teks promosi singkat huruf kapital (maksimal 25 karakter. Harus menarik perhatian tapi JUJUR/TIDAK OVERCLAIM sesuai detail produk, contoh: BISA COD / SUDAH BPOM / DISKON 50% / PROMO HEBOH / GARANSI ORIGINAL)"
+  "promo_tag": "Teks promosi singkat huruf kapital (maksimal 25 karakter. Harus menarik perhatian tapi JUJUR/TIDAK OVERCLAIM sesuai detail produk)",
+  "caption_ig": "Teks caption untuk Instagram beserta hashtag",
+  "caption_tiktok": "Teks caption untuk TikTok beserta hashtag"
 }}
 Kembalikan HANYA format JSON di atas, tanpa teks penjelasan tambahan, tanpa markdown block ```json."""
 
@@ -324,6 +330,15 @@ def main():
     with open(skrip_path, "w", encoding="utf-8") as f:
         json.dump(skrip, f, indent=2, ensure_ascii=False)
     print(f"Skrip JSON disimpan ke: {skrip_path}")
+
+    # Simpan caption terpisah
+    caption_path = f"{skrip_folder}/{indeks}_caption.txt"
+    with open(caption_path, "w", encoding="utf-8") as f:
+        f.write("=== CAPTION INSTAGRAM ===\n")
+        f.write(skrip.get("caption_ig", "") + "\n\n")
+        f.write("=== CAPTION TIKTOK ===\n")
+        f.write(skrip.get("caption_tiktok", "") + "\n")
+    print(f"Caption disimpan ke: {caption_path}")
 
     # 2. Buat Voiceover
     # Pilih hook secara acak dari hook_1, hook_2, atau hook_3
