@@ -1,0 +1,8 @@
+{
+  "hook_1": "Jerawatan tapi takut pakai sunscreen karena bikin minyakan?",
+  "hook_2": "Sunscreen Wardah Acne Calming diskon gede cuma 30 ribuan!",
+  "hook_3": "Ini dia sunscreen serum anti jerawat tanpa white cast!",
+  "isi_suara": "Wardah UV Shield Acne Calming SPF 50. Mengandung Salicylic Acid dan Panthenol, ampuh redakan jerawat dan kontrol minyak. Tekstur ringan, bebas alkohol, dan sudah BPOM.",
+  "cta": "Buruan klik link di bio buat borong sekarang!",
+  "promo_tag": "DISKON 63% & BPOM"
+}

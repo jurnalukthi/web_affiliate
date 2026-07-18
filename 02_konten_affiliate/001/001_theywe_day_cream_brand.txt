@@ -1,0 +1,8 @@
+{
+  "hook_1": "Muka kusam pas bangun tidur? Sini kumpul!",
+  "hook_2": "Capek sama bekas jerawat yang gak hilang-hilang?",
+  "hook_3": "Pengen glowing tapi males skincare ribet?",
+  "isi_suara": "Pake They.We Day Cream! Ada Niacinamide dan UV Filter yang bikin muka cerah, glowing, plus terlindungi. Aman buat bumil, busui, dan udah BPOM. Mumpung lagi diskon jadi lima puluh tujuh ribuan aja!",
+  "cta": "Klik link di bio sekarang buat checkout!",
+  "promo_tag": "DISKON 36% & SUDAH BPOM"
+}

@@ -1,0 +1,8 @@
+{
+  "hook_1": "Muka bertekstur dan bekas jerawat susah hilang?",
+  "hook_2": "Peeling serum seampuh ini cuma 39 ribu?",
+  "hook_3": "Serum eksfoliasi ungu lokal yang ramah kulit sensitif!",
+  "isi_suara": "Facetology Purple Ranger solusinya. Formula AHA BHA PHA plus Cica ampuh angkat sel kulit mati, halusin tekstur, dan cerahin muka tanpa bikin iritasi. Udah BPOM.",
+  "cta": "Buruan klik link di bio sekarang!",
+  "promo_tag": "DISKON 65% BPOM ORIGINAL"
+}

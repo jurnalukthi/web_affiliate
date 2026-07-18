@@ -1,0 +1,8 @@
+{
+  "hook_1": "Muka kusam gara-gara matahari? Sini merapat!",
+  "hook_2": "Sunscreen mahal bikin bokek? Cobain ini dulu!",
+  "hook_3": "No whitecast, no lengket! Sunscreen lokal terbaik nih!",
+  "isi_suara": "Hanasui Collagen Water Sunscreen SPF 50 PA++++. Ringan, cepat meresap, nol persen alkohol. Mengandung collagen water dan mugwort biar kulit lembap, bebas polusi, dan gak kusam. BPOM aman.",
+  "cta": "Klik link di bio sekarang buat checkout!",
+  "promo_tag": "SUDAH BPOM & DISKON"
+}

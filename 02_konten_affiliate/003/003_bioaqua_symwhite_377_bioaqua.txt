@@ -1,0 +1,8 @@
+{
+  "hook_1": "Muka kusam dan flek hitam gak hilang-hilang?",
+  "hook_2": "Skincare set lengkap diskon 84 persen cuma 90 ribuan!",
+  "hook_3": "Kandungan viral SymWhite 377 bikin wajah cepat glowing!",
+  "isi_suara": "Solusinya Bioaqua SymWhite 377 Set. Ampuh cerahkan kulit, pudarkan noda hitam, dan perbaiki skin barrier pakai 7X Ceramide. Dapat 5 produk lengkap, sudah BPOM.",
+  "cta": "Klik link di bio buat borong sekarang!",
+  "promo_tag": "DISKON 84% SUDAH BPOM"
+}
