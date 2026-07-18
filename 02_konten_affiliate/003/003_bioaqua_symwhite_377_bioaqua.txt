@@ -1,10 +1,12 @@
 {
-  "hook_1": "Muka kusam plus banyak bekas jerawat membandel?",
-  "hook_2": "Gila, skincare set lengkap cuma 90 ribuan!",
-  "hook_3": "Kandungan SymWhite 377 viral akhirnya ada paket hematnya!",
-  "isi_suara": "Paket Bioaqua SymWhite 377 ini solusinya. Mengandung SymWhite 377, Ceramide, dan Vitamin C. Ampuh cerahin kulit, pudarkan noda hitam, dan perbaiki skin barrier. Dapat facial wash, toner, serum, moisturizer, sampai sunscreen SPF 50. Sudah BPOM.",
-  "cta": "Klik link di bio sekarang sebelum promo habis!",
-  "promo_tag": "SET GLOWING CUMA 91 RIBU",
-  "caption_ig": "Punya masalah kulit kusam dan noda hitam? 😭 Tenang, Bioaqua SymWhite 377 Set siap bantu! ✨\n\nSatu paket lengkap isi 5 produk:\n🧼 Facial Wash\n🧴 Toner\n🧪 Serum\n🧴 Moisturizer\n☀️ Sunscreen SPF 50 PA++++\n\nKandungan SymWhite 377 + 7X Ceramide bantu cerahin kulit sekaligus jaga skin barrier kamu. Sudah BPOM & Halal! *Tidak disarankan untuk bumil/busui.\n\n👉 Klik link di bio untuk checkout!\n#BioaquaSymwhite377 #SkincareSetMurah #PencerahWajah #SkinBarrier #RacunSkincare #SkincareBPOM",
-  "caption_tiktok": "Noda hitam & kulit kusam hilang pakai ini! Cuma 90 ribuan dapet 5 produk lengkap BPOM. Klik link di bio sekarang! #bioaquasymwhite377 #skincareviral #racunbelanja #glowingskin #skincaremurah #fyp"
+  "hook_1": "Muka kusam banyak noda hitam?",
+  "hook_2": "Skincare set lengkap diskon 84 persen!",
+  "hook_3": "Kombinasi SymWhite 377 plus Ceramide viral!",
+  "isi_suara": "Bioaqua SymWhite 377 set. Kandungan SymWhite 377, Tranexamic Acid, Vitamin C. Samarkan flek hitam, cerahkan kulit kusam. Ada 7X Ceramide perbaiki skin barrier. Sunscreen SPF 50 PA++++ lindungi sinar UV. Bebas alkohol. BPOM aman.",
+  "cta": "Klik link di bio sekarang.",
+  "promo_tag": "DISKON 84% SET LENGKAP",
+  "marketing_title": "Solusi Flek Hitam",
+  "marketing_subtitle": "Paket Cerah Cepat",
+  "caption_ig": "Punya masalah noda hitam dan kulit kusam? Paket Bioaqua SymWhite 377 solusinya. Kandungan SymWhite 377, Tranexamic Acid, dan 7X Ceramide ampuh cerahkan kulit sekaligus perbaiki skin barrier. Lengkap dengan sunscreen SPF 50 PA++++. Sudah BPOM. Dapatkan diskon 84% sekarang. Klik link di bio.\n\n#skincareviral #bioaquasymwhite377 #paketglowing #flekhitam #skincarehemat",
+  "caption_tiktok": "Noda hitam hilang, kulit cerah maksimal pakai set Bioaqua SymWhite 377. Diskon 84% cuma hari ini. Klik link di bio sekarang!\n\n#fyp #skincareroutine #symwhite377 #racunshopee #bioaqua"
 }

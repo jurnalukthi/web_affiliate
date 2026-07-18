@@ -1,10 +1,12 @@
 {
-  "hook_1": "Muka gradakan dan banyak bekas jerawat?",
-  "hook_2": "Peeling serum viral cuma 39 ribu?",
-  "hook_3": "Peeling 60 detik langsung bikin halus!",
-  "isi_suara": "Cobain Facetology Purple Ranger. Kandungan AHA BHA PHA 13,5% ampuh angkat sel kulit mati. Plus Cica 5% biar kulit gak iritasi. Tekstur jadi halus, bekas jerawat pudar, dan makin cerah.",
-  "cta": "Klik link di bio buat borong!",
-  "promo_tag": "DISKON 65% CUMA 39 RIBU",
-  "caption_ig": "Kulit gradakan & kusam? Saatnya cobain Facetology Purple Ranger Peeling Serum! 💜\n\nDengan AHA BHA PHA 13.5% & Cica 5%, ampuh eksfoliasi tanpa bikin iritasi. Cukup 60 detik, kulit langsung halus dan cerah!\n\n👉 Klik link di bio untuk beli!\n\n#Facetology #PeelingSerum #EksfoliasiWajah #KulitGlowing #RacunShopee #SkincareLokal",
-  "caption_tiktok": "Peeling 60 detik bikin kulit langsung mulus? Cobain Facetology Purple Ranger! Diskon 65% cuma 39 ribu. Klik link di bio sekarang! 💜 #Facetology #PeelingSerum #Eksfoliasi #RacunSkincare #Fyp"
+  "hook_1": "Muka kusam sama bekas jerawat gak hilang-hilang?",
+  "hook_2": "Peeling serum viral diskon enam puluh lima persen!",
+  "hook_3": "Peeling cuma enam puluh detik tapi hasilnya secerah ini!",
+  "isi_suara": "Cobain Facetology Purple Ranger. Kandungan AHA BHA PHA plus Cica ampuh angkat sel kulit mati tanpa bikin iritasi. Kulit langsung halus, cerah, dan bebas noda bekas jerawat.",
+  "cta": "Klik link di bio buat checkout sekarang!",
+  "promo_tag": "DISKON 65% RESMI BPOM",
+  "marketing_title": "Bebas Muka Kusam",
+  "marketing_subtitle": "Peeling Serum Gentle",
+  "caption_ig": "Muka kusam dan bertekstur? Saatnya cobain Facetology Purple Ranger Peeling Serum! ✨ Dengan 13.5% Total Acids (AHA, BHA, PHA) plus 5% Pure Cica, ampuh angkat sel kulit mati tanpa bikin kulit iritasi. Kulit jadi lebih halus, cerah, dan bebas noda jerawat. Cukup pakai 60 detik aja! 💜\n\nYuk, klik link di bio buat dapetin promo diskon 65% sekarang! 🛒\n\n#Facetology #PeelingSerum #EksfoliasiWajah #KulitCerah #SkincareLokal #RacunSkincare",
+  "caption_tiktok": "Peeling 60 detik doang bisa bikin kulit sehalus ini? 😱 Cobain Facetology Purple Ranger pas diskon 65%! Link di bio ya! #peelingserum #facetology #eksfoliasi #kulitglowing #racunshopee #fyp"
 }

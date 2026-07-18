@@ -1,10 +1,12 @@
 {
-  "hook_1": "Jerawat makin meradang gara-gara salah pilih sunscreen?",
-  "hook_2": "Sunscreen Wardah SPF 50 diskon gede cuma 30 ribuan?",
-  "hook_3": "Sunscreen jerawat tanpa white cast dan bebas alkohol!",
-  "isi_suara": "Sunscreen serum Wardah SPF 50 ini penyelamat kulit berjerawat. Kandungan Salicylic Acid dan Panthenol ampuh tenangkan kemerahan serta lawan bakteri jerawat. Tekstur ringan, tidak lengket, aman BPOM.",
-  "cta": "Buruan klik link di bio sekarang!",
-  "promo_tag": "SUNSCREEN ACNE SPF 50",
-  "caption_ig": "Sunscreen andalan pejuang kulit berjerawat! 🌟 Wardah UV Shield Acne Calming Sunscreen SPF 50 PA++++ dengan Salicylic Acid & Panthenol. Lindungi kulit sekaligus redakan kemerahan. Tekstur ringan tanpa white cast! ✨\n\nKlik link di bio untuk beli! 🛒\n\n#WardahSunscreen #AcneCalming #SunscreenJerawat #RacunShopee #SkincareJerawat",
-  "caption_tiktok": "Sunscreen jerawat teringan anti lengket! Kok bisa murah banget? Cek link di bio sekarang! 😉 #sunscreenviral #wardahacne #racunbelanja #skincarejerawat #fyp"
+  "hook_1": "Jerawatan tapi takut pakai sunscreen?",
+  "hook_2": "Sunscreen acne care diskon enam puluh persen!",
+  "hook_3": "Sunscreen anti jerawat tanpa white cast.",
+  "isi_suara": "Wardah Acne Calming Sunscreen SPF 50. Kandung salicylic acid dan panthenol. Redakan jerawat, kontrol minyak, tanpa alkohol. Ringan banget di kulit.",
+  "cta": "Klik link di bio sekarang.",
+  "promo_tag": "DISKON 63 PERSEN BPOM",
+  "marketing_title": "Bebas Jerawat Sunscreen",
+  "marketing_subtitle": "Solusi Kulit Berminyak",
+  "caption_ig": "Sunscreen penyelamat kulit berjerawat! 🌟 Wardah UV Shield Acne Calming Sunscreen SPF 50 redakan kemerahan, kontrol minyak, tanpa white cast. Mengandung Salicylic Acid & Panthenol. Aman, BPOM, no alcohol. Klik link di bio untuk checkout! 🛒 #wardahsunscreen #sunscreenjerawat #acnecare #skincareindonesia #racunshopee",
+  "caption_tiktok": "Akhirnya nemu sunscreen anti jerawat yang ga bikin minyakan! 😭 Klik link di bio sebelum kehabisan diskonnya! #sunscreenviral #wardahacne #racunbelanja #fypindonesia #skincarejerawat"
 }

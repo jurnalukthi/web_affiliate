@@ -86,6 +86,10 @@ Selain skrip, buat juga caption promosi media sosial:
 - caption_ig: Caption estetis/informatif dengan emoji, jelaskan keunggulan utama, ajakan klik link di bio, dan minimal 5 hashtag relevan.
 - caption_tiktok: Caption singkat, padat, memicu rasa penasaran, ajakan klik link di bio, dan minimal 5 hashtag viral/Fyp.
 
+Tambahkan teks marketing visual (seperti gambar contoh):
+- marketing_title: Judul marketing utama pendek yang provokatif/klikbait, SANGAT SINGKAT (maksimal 2-3 kata saja!) (misal: "Wajah Glowing", "Kulit Putih", "Solusi Flek"). Jangan gunakan tanda petik atau karakter khusus.
+- marketing_subtitle: Sub-judul atau kategori info kecil di bawah judul utama, SANGAT SINGKAT (maksimal 2-3 kata saja!) (misal: "Tips Cerah", "Skincare Hemat", "Perawatan Flek"). Jangan gunakan tanda petik atau karakter khusus.
+
 Format Output:
 Berikan output dalam format JSON terstruktur persis seperti ini agar mudah diproses otomatis oleh program:
 {{
@@ -95,6 +99,8 @@ Berikan output dalam format JSON terstruktur persis seperti ini agar mudah dipro
   "isi_suara": "Teks lengkap suara isi/benefit yang akan dibaca voiceover",
   "cta": "Teks lengkap suara CTA yang akan dibaca voiceover",
   "promo_tag": "Teks promosi singkat huruf kapital (maksimal 25 karakter. Harus menarik perhatian tapi JUJUR/TIDAK OVERCLAIM sesuai detail produk)",
+  "marketing_title": "Teks judul marketing utama",
+  "marketing_subtitle": "Teks sub-judul marketing",
   "caption_ig": "Teks caption untuk Instagram beserta hashtag",
   "caption_tiktok": "Teks caption untuk TikTok beserta hashtag"
 }}
@@ -193,7 +199,7 @@ def generate_voiceover(text, output_path):
         f.write(wav_data)
     print(f"Voiceover disimpan di: {output_path}")
 
-def make_video(indeks, jenis, merk, audio_path, duration, promo_tag):
+def make_video(indeks, jenis, merk, audio_path, duration, promo_tag, marketing_title="", marketing_subtitle=""):
     aset_dir = f"03_aset_produk/{indeks}"
     images = sorted([os.path.join(aset_dir, f) for f in os.listdir(aset_dir) if f.endswith(('.webp', '.jpg', '.png'))])
     if not images:
@@ -220,41 +226,48 @@ def make_video(indeks, jenis, merk, audio_path, duration, promo_tag):
     except ValueError:
         etalase_str = f"No. Etalase: {indeks}"
 
-    # Path font
-    font_path = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
+    # Path font menggunakan Lato (Modern / Estetis)
+    font_path = "/usr/share/fonts/truetype/lato/Lato-Bold.ttf"
+    font_regular_path = "/usr/share/fonts/truetype/lato/Lato-Regular.ttf"
 
-    # Hitung ukuran font promo_tag secara dinamis berdasarkan panjang karakter agar tidak terpotong
-    tag_len = len(promo_tag)
-    if tag_len <= 15:
-        promo_fontsize = 80
-    elif tag_len <= 20:
-        promo_fontsize = 65
-    elif tag_len <= 25:
-        promo_fontsize = 55
-    else:
-        promo_fontsize = 45
-
-    # Escape teks untuk filter drawtext FFmpeg agar aman dari karakter khusus seperti '%'
-    # FFmpeg membutuhkan double escaping untuk '%' (menjadi '\\\\\\%') dalam drawtext
+    # Escape teks untuk filter drawtext FFmpeg agar aman dari karakter khusus
     promo_tag_escaped = promo_tag.replace('%', '\\\\\\%').replace("'", "").replace(':', '\\:')
     etalase_str_escaped = etalase_str.replace('%', '\\\\\\%').replace("'", "").replace(':', '\\:')
+    title_escaped = marketing_title.replace('%', '\\\\\\%').replace("'", "").replace(':', '\\:')
+    subtitle_escaped = marketing_subtitle.replace('%', '\\\\\\%').replace("'", "").replace(':', '\\:')
 
     # Filter FFmpeg: 
     # 1. Split stream gambar
-    # 2. Stream 1 (background): scale ke 1080x1920 (crop/stretch), blur 30, desaturasi sedikit jika ingin gelap
-    # 3. Stream 2 (foreground): scale fit ke 1080x1920 (force_original_aspect_ratio=decrease)
+    # 2. Stream 1 (background): scale ke 1080x1920 (crop/stretch), blur 20
+    # 3. Stream 2 (foreground): scale fit ke 1080x1920
     # 4. Overlay foreground di atas background blur secara presisi di tengah
-    # 5. Tulis promo_tag di atas
-    # 6. Tulis etalase_str di bawah
+    #    Catatan: Gambar produk (foreground) berukuran 1024x1024 ditaruh di tengah vertical: (1920-1024)/2 = 448
+    #    Jadi batas atas gambar produk ada di y=448, batas bawah ada di y=1472.
+    #    - Untuk judul marketing (atas produk):
+    #      * Gunakan 2 baris saja: marketing_title (ungu, fontsize=70) dan subtitle (putih box ungu, fontsize=45)
+    #      * Jarak dirapatkan (normal/estetis)
+    #      * marketing_title ditaruh di y=180.
+    #      * marketing_subtitle ditaruh di y=290 (jarak 110px).
+    #      * Jarak dari subtitle ke atas produk (y=448) adalah 448 - (290 + 45) = 113px (sesuai instruksi berjarak sekitar 100px).
+    #    - Untuk No. Etalase (bawah produk):
+    #      * Jarak dirapatkan sekitar 100px di bawah produk: y=1472 + 100 = 1572.
+    #      * etalase_str ditaruh di y=1572.
+    
+    # Gunakan teks asli tanpa modifikasi spasi antar huruf untuk jarak default
+    title_escaped = marketing_title.replace('%', '\\\\\\%').replace("'", "").replace(':', '\\:')
+    subtitle_escaped = marketing_subtitle.replace('%', '\\\\\\%').replace("'", "").replace(':', '\\:')
+
     filter_complex = (
         f"[0:v]split=2[bg_src][fg_src];"
         f"[bg_src]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=20:10[bg];"
         f"[fg_src]scale=1080:1920:force_original_aspect_ratio=decrease[fg];"
         f"[bg][fg]overlay=(W-w)/2:(H-h)/2[tmp1];"
-        f"[tmp1]drawtext=fontfile='{font_path}':text='{promo_tag_escaped}':fontcolor=white:fontsize={promo_fontsize}:"
-        f"x=(w-text_w)/2:y=200:borderw=5:bordercolor=black,"
+        f"[tmp1]drawtext=fontfile='{font_path}':text='{title_escaped}':fontcolor=0x4A1E60:fontsize=70:"
+        f"x=(w-text_w)/2:y=180:borderw=10:bordercolor=0xFFFFF0,"
+        f"drawtext=fontfile='{font_regular_path}':text=' {subtitle_escaped} ':fontcolor=white:fontsize=45:"
+        f"x=(w-text_w)/2:y=290:box=1:boxcolor=0x4A1E60@0.9:boxborderw=10,"
         f"drawtext=fontfile='{font_path}':text='{etalase_str_escaped}':fontcolor=yellow:fontsize=70:"
-        f"x=(w-text_w)/2:y=1650:borderw=5:bordercolor=black[v]"
+        f"x=(w-text_w)/2:y=1572:borderw=5:bordercolor=black[v]"
     )
 
     ffmpeg_cmd = (
@@ -358,7 +371,9 @@ def main():
 
     # 3. Buat Video
     promo_tag = skrip.get("promo_tag", "PROMO SPESIAL")
-    make_video(indeks, jenis, merk, audio_path, duration, promo_tag)
+    marketing_title = skrip.get("marketing_title", "")
+    marketing_subtitle = skrip.get("marketing_subtitle", "")
+    make_video(indeks, jenis, merk, audio_path, duration, promo_tag, marketing_title, marketing_subtitle)
 
     # 4. Update Halaman Web & Push ke GitHub
     print("Memperbarui halaman web etalase...")
