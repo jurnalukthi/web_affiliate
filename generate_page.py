@@ -125,7 +125,7 @@ def generate_html(products, output_dir):
                     <h2 class="text-white text-sm font-semibold line-clamp-2 leading-snug">{p['nama']}</h2>
                     <div class="mt-1.5 flex flex-wrap items-center gap-2">
                         <span class="bg-amber-400 text-gray-950 text-[10px] font-extrabold px-2.5 py-0.5 rounded shadow-sm">
-                            No. {p['indeks']}
+                            No. Etalase: {p['indeks']}
                         </span>
                         <span class="bg-violet-600/90 text-white text-[10px] font-bold px-2 py-0.5 rounded-full tracking-wider shadow-sm">
                             {p['promo_tag']}
